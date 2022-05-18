@@ -6,6 +6,7 @@ public abstract class contaPadrao{
     private int agencia = 1;
     static int ContNum = 1;
     private int numero;
+    //aqui se deve alterar o funcionario para pessoa e alterar desde cliente, uma pessoa, ou outro derivado
     private FuncionarioPadrao titular;
 
     public contaPadrao(){

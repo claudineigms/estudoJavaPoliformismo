@@ -2,7 +2,6 @@ package FUNCOES;
 
 import INDIVIDUOS.MODELS.FuncionarioPadrao;
 
-
 public class ControleBonificacao {
     private double soma;
 
@@ -10,7 +9,7 @@ public class ControleBonificacao {
         soma = soma + g.getBonificacao();
     }
 
-    public double mostra(){
+    public double mostraSaldo(){
         return soma;
     }
 
