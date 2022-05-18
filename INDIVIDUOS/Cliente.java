@@ -1,31 +1,22 @@
 package INDIVIDUOS;
-
 import INDIVIDUOS.MODELS.*;
 
-public class Cliente implements FuncionarioAutenticavel{
-    private int senha;
+public class Cliente extends PessoaPadrao implements SistemaAutenticação{
+    FuncoesSistemaAutenciacao funcoes;
+
+    public Cliente(){
+        funcoes = new FuncoesSistemaAutenciacao();
+    }
 
     public boolean setSenha(int senha){
-        if (senha>0){
-            this.senha=senha;
-            return true;
-        }
-        else{
-            System.out.println("Favor Conferir sua Senha");
-            return false;
-        }
+        return funcoes.setSenha(senha);
     }
+
     public int getSenha(){
-        return this.senha;
+        return funcoes.getSenha();
     }
 
     public boolean autentica(int senha){
-        if(this.senha == senha){
-            System.out.println("Logado com Sucesso!");
-            return true;
-        }else{
-            System.out.println("Tente Novamente");
-            return false;
-        }
+        return funcoes.autentica(senha);
     }
 }

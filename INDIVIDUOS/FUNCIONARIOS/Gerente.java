@@ -1,8 +1,8 @@
-package INDIVIDUOS.FUNCIONARIO;
+package INDIVIDUOS.FUNCIONARIOS;
 
 import INDIVIDUOS.MODELS.*;
 
-public class Gerente extends FuncionarioPadrao implements FuncionarioAutenticavel{
+public class Gerente extends FuncionarioPadrao implements SistemaAutenticação{
 	private int senha;
 	
 	@Override

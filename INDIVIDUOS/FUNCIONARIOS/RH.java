@@ -1,4 +1,4 @@
-package INDIVIDUOS.FUNCIONARIO;
+package INDIVIDUOS.FUNCIONARIOS;
 
 import INDIVIDUOS.MODELS.FuncionarioPadrao;
 

@@ -1,6 +1,6 @@
 package INDIVIDUOS.MODELS;
 
-public abstract interface FuncionarioAutenticavel{
+public abstract interface SistemaAutenticação{
     
     public abstract boolean setSenha(int senha);
     public abstract int getSenha();
